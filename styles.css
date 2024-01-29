@@ -65,6 +65,8 @@ section{
     height: calc(100vh -80px);
 }
 
+/*PAGINA 1-----*/
+
 #pagina1{
     width: 95vw;
     height: 90vh;
@@ -103,6 +105,8 @@ section{
     background-color: rgb(7, 7, 72);
     color: aliceblue;
     border-radius: 10px;
+    height: 60px;
+    width: 100px;
 
 }
 
@@ -148,6 +152,25 @@ section{
     display: flex;
     align-items: center;
     margin-left: 50px;
+}
+
+#info h2{
+    font-size: 50px;
+}
+
+#info p{
+    font-size: 35px;
+}
+
+
+#learn button{
+    font-size: 15px;
+    background-color: rgb(7, 7, 72);
+    color: aliceblue;
+    border-radius: 10px;
+    height: 60px;
+    width: 100px;
+
 }
 
 @media (max-width: 952px){
