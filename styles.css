@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -6,47 +6,62 @@
     box-sizing: border-box;
 }
 
-nav{
+.img {
+    display: flex;
+}
+
+#imagen-about {
+    width: 50vw;
+    height: 50vw;
+
+}
+
+nav {
     background: rgb(114, 114, 185);
     height: 80px;
     width: 100%;
- 
+
 }
-.enlace{
+
+.enlace {
     position: absolute;
     padding: 20px 50px;
 }
 
 
-.enlace h3{
+.enlace h3 {
     text-align: left;
 }
 
-.logo{
+.logo {
     height: 40px;
 }
-nav ul{
+
+nav ul {
     float: right;
     margin-right: 20px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
 }
-li a:hover{
+
+li a:hover {
     background: lightcoral;
     transition: .3s;
 }
-.checkbtn{
+
+.checkbtn {
     font-size: 30px;
     color: white;
     float: right;
@@ -55,10 +70,12 @@ li a:hover{
     cursor: pointer;
     display: none;
 }
-#check{
+
+#check {
     display: none;
 }
-section{
+
+section {
     background: url(fondo.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
@@ -67,16 +84,16 @@ section{
 
 /*PAGINA 1-----*/
 
-#pagina1{
-    width: 95vw;
-    height: 90vh;
+#pagina1 {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     border: 1px solid violet;
 }
 
-#marca{
+#marca {
     width: 45vw;
     margin-left: 15px;
     display: flex;
@@ -87,20 +104,20 @@ section{
     align-items: center;
 }
 
-#marca h2{
+#marca h2 {
     font-size: 70px;
 }
 
-#marca h3{
+#marca h3 {
     font-size: 30px;
 }
 
-#reserva{
+#reserva {
     display: flex;
     flex-direction: column;
 }
 
-#marca button{
+#marca button {
     font-size: 15px;
     background-color: rgb(7, 7, 72);
     color: aliceblue;
@@ -110,7 +127,7 @@ section{
 
 }
 
-#imagen-portada{
+#imagen-portada {
     width: 45vw;
     height: 90vh;
     display: flex;
@@ -119,7 +136,7 @@ section{
     flex-direction: column;
 }
 
-#imagen-portada img{
+#imagen-portada img {
     width: 50vw;
     height: 50vw;
 
@@ -127,8 +144,8 @@ section{
 
 /*PAGINA 2-----*/
 
-#pagina2{
-    width: 95vw;
+#pagina2 {
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -137,7 +154,7 @@ section{
 }
 
 
-#info{
+#info {
     width: 45vw;
     margin-left: 15px;
     display: flex;
@@ -148,22 +165,22 @@ section{
     align-items: center;
 }
 
-#nosotros{
+#nosotros {
     display: flex;
     align-items: center;
     margin-left: 50px;
 }
 
-#info h2{
+#info h2 {
     font-size: 50px;
 }
 
-#info p{
+#info p {
     font-size: 35px;
 }
 
 
-#learn button{
+#learn button {
     font-size: 15px;
     background-color: rgb(7, 7, 72);
     color: aliceblue;
@@ -173,20 +190,245 @@ section{
 
 }
 
-@media (max-width: 952px){
-    .enlace{
+/*PAGINA 3-----*/
+#pagina3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid violet;
+}
+
+.contenedor-textos {
+    display: flex;
+    /*con esto hago el texto responsive*/
+    flex-direction: column;
+    /*con esto hago que el texto este debajo del otro*/
+    text-align: center;
+    font-size: 3vw;
+    /*colocando la informacion en vw queda con el ancho visible*/
+    margin-bottom: 20px;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* Alinea las imágenes en la parte superior */
+}
+
+.contenedor-textos p {
+    color: #ff702a;
+}
+
+.imagen {
+    text-align: center;
+    position: relative;
+    /* Permite posicionar el texto dentro de la imagen */
+}
+
+.imagen img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: 10%;
+    /*aqui agrego borde y estilos*/
+    border-style: double;
+    border-width: 4px;
+    border-color: darkblue;
+
+
+}
+
+.textos-img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    background: rgba(232, 154, 52, 0.575);
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    bottom: -50px;
+    /* Ajusta la posición vertical */
+    left: 50%;
+    /* Centra el texto horizontalmente */
+    transform: translateX(-50%);
+    /* Ajusta la posición horizontal */
+
+}
+
+#pagina3 h3 {
+    width: 27vw;
+    margin-left: 3vw;
+    background-color: rgba(4, 4, 73, 0.678);
+    font-size: 2vw;
+    color: aliceblue;
+}
+
+#pagina3 h4 {
+    width: 27vw;
+    margin-left: 3vw;
+    background-color: rgba(154, 154, 173, 0.31);
+    font-size: 2vw;
+}
+
+#pagina3 h5 {
+    width: 27vw;
+    margin-left: 3vw;
+
+    font-size: 2vw;
+}
+
+
+
+/*PAGINA 4-----*/
+#pagina4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid violet;
+}
+
+.services-textos {
+    display: flex;
+    /*con esto hago el texto responsive*/
+    flex-direction: column;
+    /*con esto hago que el texto este debajo del otro*/
+    text-align: center;
+    font-size: 3vw;
+    /*colocando la informacion en vw queda con el ancho visible*/
+    margin-bottom: 20px;
+}
+
+.services-imagenes {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* Alinea las imágenes en la parte superior */
+}
+
+.services-textos p {
+    color: #ff702a;
+}
+
+.imagen4 {
+    text-align: center;
+    position: relative;
+    /* Permite posicionar el texto dentro de la imagen */
+}
+
+.imagen4 img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: 10%;
+    /*aqui agrego borde y estilos*/
+    border-style: double;
+    border-width: 4px;
+    border-color: darkblue;
+
+
+}
+
+.textos-img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    background: rgba(232, 154, 52, 0.575);
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    bottom: -50px;
+    /* Ajusta la posición vertical */
+    left: 50%;
+    /* Centra el texto horizontalmente */
+    transform: translateX(-50%);
+    /* Ajusta la posición horizontal */
+
+}
+
+#pagina4 h3 {
+    width: 27vw;
+    margin-left: 3vw;
+    background-color: rgba(4, 4, 73, 0.678);
+    font-size: 2vw;
+    color: aliceblue;
+}
+
+#pagina4 h4 {
+    width: 27vw;
+    margin-left: 3vw;
+    background-color: rgba(154, 154, 173, 0.31);
+    font-size: 2vw;
+}
+
+#pagina4 h5 {
+    width: 27vw;
+    margin-left: 3vw;
+    font-size: 2vw;
+}
+
+/*PAGINA 5-----*/
+#pagina5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid violet;
+}
+
+.quality {
+    display: flex;
+    /*con esto hago el texto responsive*/
+    flex-direction: column;
+    /*con esto hago que el texto este debajo del otro*/
+    text-align: center;
+    font-size: 3vw;
+    /*colocando la informacion en vw queda con el ancho visible*/
+    margin-bottom: 20px;
+    border: 1px solid violet;
+}
+
+.quality button {
+    font-size: 15px;
+    background-color: rgb(7, 7, 72);
+    color: aliceblue;
+    border-radius: 10px;
+    height: 60px;
+    width: 100px;
+}
+
+
+#pagina5 h1 {
+    font-size: 5vw;
+    color: rgb(4, 62, 113);
+    align-items: center;
+}
+
+
+@media (max-width: 952px) {
+    .enlace {
         padding-left: 20px;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 16px;
     }
 }
 
-@media (max-width: 858px){
-    .checkbtn{
+@media (max-width: 858px) {
+    .checkbtn {
         display: block;
     }
-    ul{
+
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -196,16 +438,18 @@ section{
         text-align: center;
         transition: all .5s;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 20px;
     }
 
-    #check:checked ~ ul{
-        left:0;
+    #check:checked~ul {
+        left: 0;
     }
 }
