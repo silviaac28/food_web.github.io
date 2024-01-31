@@ -16,11 +16,15 @@
 
 }
 
+body{
+    background-color: rgb(246, 246, 243);
+}
+
 nav {
     background: rgb(2, 2, 89);
     height: 80px;
-    width: 100%;
-    color: WHI;
+    width: 100vw;
+    color: white;
 
 }
 
@@ -106,16 +110,25 @@ section {
     justify-content: center;
     /* align-content: space-between; */
     align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #marca h2 {
-    font-size: 70px;
+    font-size: 5vw;
 }
 
 #marca h3 {
     font-size: 30px;
+    text-align: center;
+    margin-top: 2vh;
 }
 
+#marca p {
+
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+}
 #reserva {
     display: flex;
     flex-direction: column;
@@ -132,17 +145,18 @@ section {
 }
 
 #imagen-portada {
-    width: 45vw;
+    width: 35vw;
     height: 90vh;
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    margin-right: 12vw;
 }
 
 #imagen-portada img {
-    width: 50vw;
-    height: 50vw;
+    width: 45vw;
+    height: 45vw;
 
 }
 
