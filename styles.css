@@ -13,6 +13,7 @@
 #imagen-about {
     width: 50vw;
     height: 50vw;
+    display: flex;
 
 }
 
@@ -115,12 +116,15 @@ section {
 
 #marca h2 {
     font-size: 5vw;
+    display: flex;
 }
 
 #marca h3 {
     font-size: 30px;
     text-align: center;
     margin-top: 2vh;
+    display: flex;
+    display: flex;
 }
 
 #marca p {
@@ -128,6 +132,7 @@ section {
     text-align: center;
     margin-top: 2vh;
     margin-bottom: 6vh;
+    display: flex;
 }
 #reserva {
     display: flex;
@@ -141,6 +146,7 @@ section {
     border-radius: 10px;
     height: 60px;
     width: 100px;
+    display: flex;
 
 }
 
@@ -157,6 +163,7 @@ section {
 #imagen-portada img {
     width: 45vw;
     height: 45vw;
+    display: flex;
 
 }
 
@@ -191,10 +198,12 @@ section {
 
 #info h2 {
     font-size: 50px;
+    display: flex;
 }
 
 #info p {
-    font-size: 35px;
+    font-size: 20px;
+    display: flex;
 }
 
 
@@ -205,6 +214,7 @@ section {
     border-radius: 10px;
     height: 60px;
     width: 100px;
+    display: flex;
 
 }
 
@@ -519,4 +529,43 @@ footer{
     #check:checked~ul {
         left: 0;
     }
+
+    #pagina1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+    #pagina2 {
+        display: flex;
+        place-content: stretch flex-end;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+}
+
+    #info {
+        width: 77vw;
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        /* align-content: space-between; */
+        align-items: center;}
+
+    #learn {
+        margin-top: 5vh;}
+
+
+    #learn button {
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: stretch;
+        justify-content: space-evenly;
+        align-items: stretch;}
+
+    #imagen-about {
+
+
 }
