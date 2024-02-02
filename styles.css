@@ -193,7 +193,7 @@ section {
 #nosotros {
     display: flex;
     align-items: center;
-    margin-left: 50px;
+
 }
 
 #info h2 {
@@ -509,7 +509,7 @@ footer{
     width: 2vw;
 }
 
-@media (max-width: 858px) {
+@media (max-width: 720px) {
     .checkbtn {
         display: block;
     }
@@ -543,6 +543,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: auto;
 }
 
     #pagina2 {
@@ -551,8 +552,8 @@ footer{
         align-items: center;
         flex-direction: column-reverse;
         justify-content: space-evenly;
+        height: auto;
 }
-
     #info {
         width: 77vw;
         margin-left: 15px;
@@ -562,6 +563,15 @@ footer{
         justify-content: center;
         /* align-content: space-between; */
         align-items: center;}
+        
+
+
+    #marca h2 {
+        font-size: 5vh;
+        display: flex;
+        margin-top: 5vh;
+        text-align: center;
+        }
 
     #learn {
         margin-top: 5vh;}
@@ -642,8 +652,8 @@ footer {
 }
 
 .imagen4 img{
-    width: 40vw;
-    height: auto;
+    width: auto;
+    height: 20vh;
     display: block;
     margin-left: 2vw;
     border-style: double;
@@ -652,8 +662,8 @@ footer {
 }
 
 .imagen img {
-    width: 40vw;
-    height: auto;
+    width: auto;
+    height: 20vh;
     display: block;
     margin-left: 2vw;
     border-style: double;
@@ -662,4 +672,26 @@ footer {
 }
 
 
+#follow{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
 }
+
+#imagen-portada {
+    width: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right:0vw;
+}
+#imagen-portada img {
+    width: auto; 
+    height: 38vh;
+    /* display: flex; */
+}
+}
+
