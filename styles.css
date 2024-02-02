@@ -514,10 +514,10 @@ footer{
         display: block;
     }
 
-    ul {
+    #menuprincipal ul {
         position: fixed;
-        width: 100%;
-        height: 100vh;
+        width: 100vw;
+        height: 60vh;
         background: #2c3e50;
         top: 80px;
         left: -100%;
@@ -525,13 +525,13 @@ footer{
         transition: all .5s;
     }
 
-    nav ul li {
+    #menuprincipal ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    nav ul li a {
+    #menuprincipal ul li a {
         font-size: 20px;
     }
 
@@ -593,4 +593,73 @@ footer{
         align-items: flex-start;
         flex-direction: column;
 
-}}
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: center;
+}
+#barrafooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    color: antiquewhite;
+}
+#redes{
+    display: flex;
+    margin-bottom: 8vh;
+    flex-direction: column;
+    margin-top: 4vh;
+}
+
+#users img{
+    display: flex;
+    height: 3vh;
+    width: 7vw;
+}
+
+
+.imagen {
+    text-align: center;
+    display: flex;
+    width: 66vw;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.imagen4 {
+    text-align: center;
+    display: flex;
+    width: 66vw;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.imagen4 img{
+    width: 40vw;
+    height: auto;
+    display: block;
+    margin-left: 2vw;
+    border-style: double;
+    border-width: 4px;
+    border-color: darkblue;
+}
+
+.imagen img {
+    width: 40vw;
+    height: auto;
+    display: block;
+    margin-left: 2vw;
+    border-style: double;
+    border-width: 4px;
+    border-color: darkblue;
+}
+
+
+}
