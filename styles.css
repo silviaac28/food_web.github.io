@@ -18,7 +18,7 @@
 }
 
 body{
-    background-color: rgb(246, 246, 243);
+    background-color: rgb(230, 239, 249);
 }
 
 nav {
@@ -254,6 +254,8 @@ section {
 .imagen {
     text-align: center;
     position: relative;
+    width: 25vw;
+
     /* Permite posicionar el texto dentro de la imagen */
 }
 
@@ -286,29 +288,31 @@ section {
     /* Ajusta la posición horizontal */
 
 }
+#pagina3 h1 {
+    font-size: 3vw;
+}
+
 
 #pagina3 h3 {
-    width: 27vw;
-    margin-left: 3vw;
+    width: 21vw;
+    margin-left: 2vw;
     background-color: rgba(4, 4, 73, 0.678);
     font-size: 2vw;
     color: aliceblue;
 }
 
 #pagina3 h4 {
-    width: 27vw;
-    margin-left: 3vw;
+    width: 21vw;
+    margin-left: 2vw;
     background-color: rgba(154, 154, 173, 0.31);
     font-size: 2vw;
 }
 
 #pagina3 h5 {
-    width: 27vw;
-    margin-left: 3vw;
-
+    width: 21vw;
+    margin-left: 2vw;
     font-size: 2vw;
 }
-
 
 
 /*PAGINA 4-----*/
@@ -347,6 +351,7 @@ section {
 .imagen4 {
     text-align: center;
     position: relative;
+    width: 25vw;
     /* Permite posicionar el texto dentro de la imagen */
 }
 
@@ -380,24 +385,28 @@ section {
 
 }
 
+#pagina4 h1 {
+    font-size: 3vw;
+}
+
 #pagina4 h3 {
-    width: 27vw;
-    margin-left: 3vw;
+    width: 21vw;
+    margin-left: 2vw;
     background-color: rgba(4, 4, 73, 0.678);
     font-size: 2vw;
     color: aliceblue;
 }
 
 #pagina4 h4 {
-    width: 27vw;
-    margin-left: 3vw;
+    width: 21vw;
+    margin-left: 2vw;
     background-color: rgba(154, 154, 173, 0.31);
     font-size: 2vw;
 }
 
 #pagina4 h5 {
-    width: 27vw;
-    margin-left: 3vw;
+    width: 21vw;
+    margin-left: 2vw;
     font-size: 2vw;
 }
 
@@ -564,8 +573,22 @@ footer{
         align-content: stretch;
         justify-content: space-evenly;
         align-items: stretch;}
+    
+    .imagen{
+        justify-content: center;
+    }
 
-    #imagen-about {
+    .contenedor-imagenes {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 
+    .services-imagenes {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
 
-}
+}}
